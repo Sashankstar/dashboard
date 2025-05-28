@@ -1,0 +1,214 @@
+
+.appointment-card {
+  background-color: #e0e3f8; 
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 50, 0.1);
+  color: #2c2c54; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-card.primary {
+  background-color: #3b3fc1; 
+  color: white;
+}
+
+.appointment-card .icon {
+  margin-right: 12px;
+  flex-shrink: 0;
+  color: inherit;
+}
+
+.appointment-card .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-card .title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.appointment-card .time {
+  font-size: 0.875rem;
+  color: #555a99;
+  margin-bottom: 4px;
+}
+
+.appointment-card .status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.appointment-card .status.pending {
+  color: #f39c12; 
+}
+
+/* UpcomingSchedule container */
+.upcoming-schedule-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c2c54;
+}
+
+.upcoming-schedule-container h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.day-group {
+  margin-bottom: 24px;
+}
+
+.day-group h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+  color: #4a4a8a;
+}
+
+/* CalendarView styles */
+.calendar-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c2c54;
+}
+
+/* UserProfile styles */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.user-profile .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3b3fc1;
+}
+
+.user-profile .user-name {
+  font-weight: 600;
+  color: #2c2c54;
+  font-size: 1rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.calendar-header .nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #4a4a8a;
+  font-weight: 700;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.calendar-header .nav-arrow.left {
+  left: 0;
+}
+
+.calendar-header .nav-arrow.right {
+  right: 0;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #f0f0f5;
+  padding: 8px 0;
+  border-radius: 8px;
+  color: #4a4a8a;
+  margin-bottom: 8px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: left;
+}
+
+.calendar-day {
+  min-height: 80px;
+  border-radius: 12px;
+  padding: 8px;
+  background-color: #f9f9ff;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-day.empty {
+  background-color: #f0f0f5;
+  cursor: default;
+}
+
+.calendar-day.selected {
+  background-color: #d0d3f8;
+  box-shadow: 0 0 10px #a0a3f8;
+}
+
+.calendar-day .day-number {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2c2c54;
+}
+
+.appointment-time {
+  background-color: #a0a3f8;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-bottom: 4px;
+  display: inline-block;
+  cursor: default;
+  user-select: none;
+}
+
+.appointment-cards {
+  margin-top: 24px;
+}
+
+.appointment-card-small {
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: #e0e3f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 50, 0.1);
+  color: #2c2c54;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.appointment-card-small .time {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #555a99;
+}
