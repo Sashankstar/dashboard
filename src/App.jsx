@@ -7,7 +7,7 @@ import './Components/ScheduleStyles.css';
 
 const App = () => {
   return (
-    <div className="App" style={{ display: 'flex', padding: '20px', gap: '40px' }}>
+    <div className="App" style={{ display: 'flex',justifyContent:"space-between"}}>
       <div style={{ flex: '0 0 250px' }}>
         <Header />
         <ActivityFeedNew />  

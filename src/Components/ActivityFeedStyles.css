@@ -31,7 +31,7 @@
 .activity-feed-bars {
   display: flex;
   align-items: flex-end;
-  gap: 12px;
+  gap:20px;
   height: 100px;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .activity-feed-bar {
-  width: 6px;
+  width: 10px;
   border-radius: 4px;
   transition: height 0.3s ease;
 }

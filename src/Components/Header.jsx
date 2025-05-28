@@ -1,6 +1,7 @@
 import React from 'react'
-import { ArrowDown,  BarChart3, Bell, Calendar, Clock,  HelpCircle,  History, Home, MessageCircle,  Plus, Search, Settings,ChevronLeft,ChevronRight } from 'lucide-react';
+import { ArrowDown,  BarChart3, Bell, Calendar, Clock,  HelpCircle,  History, Home, MessageCircle,  Plus, Search, Settings } from 'lucide-react';
 import HealthData from './Data/HealthData'
+import './Header.css'
 const Header = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const Header = () => {
     <p><Settings/>settings</p>
   </div>
 
-  <div className="bodypart" style={{ marginLeft: "120px", padding: "20px" }}>
+  <div className="bodypart" style={{ marginLeft: "190px", padding: "20px" }}>
   {/* Top bar: search and header */}
   <form style={{ display: "flex", alignItems: "center", position: "relative", gap: "50px" }}>
     <div>
@@ -43,23 +44,15 @@ const Header = () => {
     <Bell style={{ color: 'blue', fill: "blue" }} />
     <button><Plus /></button>
   </form>
-
-  {/* Header */}
   <div style={{ display: "flex", justifyContent: "space-between", marginTop: "20px" }}>
     <h1 style={{ color: "#04446f" }}>Dashboard</h1>
     <span style={{ marginTop: "25px" }}>This week <ArrowDown /></span>
   </div>
-
-  {/* Main layout: image + indicator cards */}
   <div style={{ display: "flex", gap: "60px", marginTop: "30px" }}>
-    
-    {/* Left - Human Image */}
     <div className='body-section' style={{ position: "relative" }}>
       <div className='body-image' style={{  boxShadow: "0px 4px 8px 20px #eef2f4",  width: "300px",  borderRadius: "20px",  backgroundColor: "#fff",  padding: "10px"}}>
         <img
           src="https://massageblisschicago.com/wp-content/uploads/2024/02/Myofascial-Release-Therapists-2.jpg"style={{ width: "100%", height: "550px" }}/>
-        
-        {/* Tags on Image */}
         <div style={{ position: "absolute", top: "140px", left: "200px",   backgroundColor: "#3f51b5", color: "#fff", borderRadius: "10px",   padding: "6px 12px", fontSize: "12px", display: "flex", alignItems: "center", gap: "6px" }}>
           ❤️Healthy Heart
         </div>
@@ -68,8 +61,6 @@ const Header = () => {
         </div>
       </div>
     </div>
-
-    {/* Right - Indicator Cards */}
     <div className="indicator" style={{   display: 'flex',   flexDirection: 'column',   gap: '20px',   justifyContent: 'center' }}>
       {HealthData.healthCards.map(card => {
         let progressWidth;
@@ -97,11 +88,9 @@ const Header = () => {
     </div>
   </div>
  </div>
- {/* active charts */}
     </div>
   </>
   )
 }
 
 export default Header
-
